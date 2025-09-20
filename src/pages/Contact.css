@@ -1,0 +1,261 @@
+/* --- Contact Page Styles for Arham Tax Consultancy --- */
+.contact-root {
+  background: #f7f8fa;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.contact-hero {
+  width: 100%;
+  padding: 4.5rem 0 2.5rem 0;
+  background: linear-gradient(90deg, #e0e7ff 0%, #f7f8fa 100%);
+  text-align: center;
+  position: relative;
+}
+.contact-hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a2a3a;
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.02em;
+}
+.contact-hero-subtext {
+  font-size: 1.18rem;
+  color: #4b5563;
+  margin-bottom: 2.2rem;
+}
+.contact-hero-illustration img {
+  width: 220px;
+  max-width: 90vw;
+  margin: 0 auto;
+  display: block;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(30,40,60,0.08);
+}
+.fade-in {
+  animation: fadeIn 1.2s cubic-bezier(.4,1.4,.6,1);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+}
+.fade-in, .fade-up {
+  animation-fill-mode: both;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0 2.2rem 0;
+}
+.contact-form {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(30,40,60,0.08);
+  padding: 2.2rem 2.2rem 1.7rem 2.2rem;
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin: 0 auto;
+}
+.form-row {
+  width: 100%;
+}
+.form-input {
+  width: 100%;
+  padding: 0.95rem 1.1rem;
+  border-radius: 1.2rem;
+  border: 1.5px solid #e5e7eb;
+  font-size: 1.08rem;
+  background: #f7f8fa;
+  color: #1a2a3a;
+  box-shadow: 0 2px 8px 0 rgba(30,40,60,0.04);
+  transition: border 0.22s, box-shadow 0.22s, background 0.22s;
+  outline: none;
+}
+.form-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 16px 0 rgba(59,130,246,0.13);
+  background: #fff;
+}
+.form-input:hover {
+  box-shadow: 0 4px 16px 0 rgba(30,40,60,0.09);
+}
+.form-submit-btn {
+  background: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.13rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.9rem 2.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px 0 rgba(30,40,60,0.09);
+  transition: transform 0.22s cubic-bezier(.4,1.4,.6,1), background 0.22s;
+  outline: none;
+}
+.form-submit-btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%);
+}
+.form-error {
+  color: #ef4444;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.form-status {
+  color: #22c55e;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.fade-up {
+  animation: fadeUp 1.1s cubic-bezier(.4,1.4,.6,1);
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Contact Info Cards */
+.contact-info-section {
+  padding: 2.2rem 0 1.7rem 0;
+  display: flex;
+  justify-content: center;
+}
+.contact-info-grid {
+  display: flex;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact-info-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 12px 0 rgba(30,40,60,0.07);
+  padding: 1.3rem 1.7rem;
+  min-width: 220px;
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  transition: box-shadow 0.22s, transform 0.2s;
+}
+.contact-info-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(30,40,60,0.13);
+  transform: translateY(-4px);
+}
+.contact-info-icon {
+  font-size: 2rem;
+  color: #6366f1;
+  flex-shrink: 0;
+}
+.contact-info-label {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #1a2a3a;
+}
+.contact-info-value {
+  font-size: 1.05rem;
+  color: #4b5563;
+  text-decoration: none;
+}
+.contact-info-value:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+/* Google Map Section */
+.contact-map-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2.2rem 0 1.7rem 0;
+}
+.contact-map-section iframe {
+  width: 100%;
+  max-width: 640px;
+  height: 320px;
+  border-radius: 1.5rem;
+  border: none;
+  box-shadow: 0 2px 16px 0 rgba(30,40,60,0.09);
+}
+
+/* Final Call-to-Action Section */
+.contact-final-cta {
+  width: 100%;
+  background: linear-gradient(90deg, #3b82f6 0%, #6366f1 100%);
+  color: #fff;
+  padding: 2.7rem 0 2.7rem 0;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.contact-final-cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+}
+.contact-final-cta-heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.contact-final-cta-btn {
+  background: #fff;
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 1.13rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.9rem 2.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px 0 rgba(30,40,60,0.09);
+  transition: transform 0.22s cubic-bezier(.4,1.4,.6,1), background 0.22s, color 0.22s;
+  outline: none;
+  text-decoration: none;
+}
+.contact-final-cta-btn:hover {
+  transform: scale(1.08);
+  background: #3b82f6;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+  .contact-hero-title {
+    font-size: 1.3rem;
+  }
+  .contact-hero-illustration img {
+    width: 98vw;
+    border-radius: 1rem;
+  }
+  .contact-form {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    border-radius: 1rem;
+    max-width: 98vw;
+  }
+  .contact-info-card {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 1rem 0.7rem;
+    border-radius: 1rem;
+  }
+  .contact-map-section iframe {
+    max-width: 98vw;
+    height: 220px;
+    border-radius: 1rem;
+  }
+  .contact-final-cta {
+    padding: 1.2rem 0 1.2rem 0;
+  }
+}
