@@ -1,0 +1,258 @@
+/* Footer.css */
+.footer {
+  background: linear-gradient(120deg, #2d1e10 80%, #4a3c28 100%);
+  color: #fdf6ed;
+  padding: 3rem 2rem 1.2rem 2rem;
+  font-family: 'Playfair Display', 'Segoe UI', Arial, sans-serif;
+  box-shadow: 0 -2px 24px rgba(212,175,55,0.08);
+}
+
+.footer.arham-footer {
+  background: linear-gradient(60deg, #295683 35%, #E63946 100%);
+  color: #fff;
+  padding: 3rem 2rem 1.2rem 2rem;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  box-shadow: 0 -2px 24px rgba(0,51,102,0.10);
+}
+
+/* Footer Layout Update for Arham Tax Consultancy */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 2.5rem;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.footer-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 0.2rem;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  color: #e3e8ff;
+  margin-bottom: 0.5rem;
+}
+
+.footer-address {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #fff2f2;
+  border-radius: 8px;
+  padding: 7px 14px;
+  margin-bottom: 7px;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.08);
+  font-size: 1.05rem;
+  min-width: 260px;
+  max-width: 260px;
+  width: 260px;
+  color: black;
+}
+
+.footer-contact {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #e3e8ff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.footer-contact-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: #E63946;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #fff2f2;
+  border-radius: 8px;
+  padding: 7px 14px;
+  margin-bottom: 7px;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.08);
+  font-size: 1.05rem;
+  min-width: 260px;
+  max-width: 260px;
+  width: 260px;
+}
+
+.footer-contact-icon {
+  color: #E63946 !important;
+  font-size: 1.15rem;
+  margin-right: 2px;
+}
+
+.footer-contact-item a {
+  color: #003366;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact-item a:hover {
+  color: #E63946;
+  text-decoration: underline;
+}
+
+.footer-social-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-contact-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: flex-start;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-left: 30%;
+}
+
+.footer-link {
+  color: #fdf6ed;
+  font-size: 1.12rem;
+  text-decoration: none;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  border-radius: 8px;
+  padding: 4px 12px;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.footer-link:hover {
+  background: #d4af37;
+  color: #2d1e10;
+}
+
+.footer.arham-footer .footer-link {
+  color: #fff;
+  font-size: 1.12rem;
+  text-decoration: none;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  border-radius: 8px;
+  padding: 4px 12px;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.footer.arham-footer .footer-link:hover {
+  background: #E63946;
+  color: #fff;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #003366;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  background: #E63946;
+  color: #fff;
+}
+
+.footer.arham-footer .footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #003366;
+  border: 2px solid #E63946;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+  transition: background 0.25s, color 0.25s, box-shadow 0.25s, border 0.25s;
+  box-shadow: 0 2px 8px rgba(0,51,102,0.08);
+  text-decoration: none;
+}
+
+.footer.arham-footer .footer-icon:hover {
+  background: #E63946;
+  color: #fff;
+  border-color: #003366;
+  box-shadow: 0 4px 16px rgba(230,57,70,0.18);
+}
+
+/* .footer-contact-label {
+  color: #E63946 !important;
+} */
+
+.footer-contact-item {
+  margin-left: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #e3e8ff;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  .footer-social-contact {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .footer {
+    padding: 1.5rem 0.7rem 0.7rem 0.7rem;
+  }
+  .footer-social-contact {
+    align-items: flex-start;
+  }
+}
