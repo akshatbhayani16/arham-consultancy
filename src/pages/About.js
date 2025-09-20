@@ -1,8 +1,9 @@
 import React from "react";
 import { FaLinkedin, FaUserTie, FaBullseye, FaEye, FaBalanceScale, FaChartLine, FaShieldAlt, FaSyncAlt } from "react-icons/fa";
 import Footer from "../components/Footer";
-import AboutContentPhoto from "../images/about-content.jpeg";
+import AboutContentPhoto from "../images/about-hero.webp";
 import { Link } from "react-router-dom";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 import "./About.css";
 
 const milestones = [
@@ -13,6 +14,11 @@ const milestones = [
 ];
 
 function About() {
+  // Animation refs for sections that were disappearing
+  const missionVisionRef = useScrollAnimation('animate-in');
+  const founderSectionRef = useScrollAnimation('animate-in');
+  const valuesRef = useScrollAnimation('animate-in');
+
   return (
     <div className="arham-about-root">
       {/* Hero Section */}
@@ -80,7 +86,7 @@ function About() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="arham-mission-vision fade-up">
+      <section className="arham-mission-vision fade-up" ref={missionVisionRef}>
         <div className="arham-mv-grid">
           <div className="arham-mv-card glass-card hover-lift">
             <FaBullseye className="arham-mv-icon" />
@@ -96,7 +102,7 @@ function About() {
       </section>
 
       {/* Founder Section */}
-      <section className="arham-founder-section fade-up">
+      <section className="arham-founder-section fade-up" ref={founderSectionRef}>
         <div className="arham-founder-card hover-lift">
           <div className="arham-founder-img-wrap">
             <img src={AboutContentPhoto} alt="Ronak Shah" className="arham-founder-img-circle" />
@@ -118,7 +124,7 @@ function About() {
       </section>
 
       {/* Core Values Section */}
-      <section className="arham-values-section">
+      <section className="arham-values-section fade-up" ref={valuesRef}>
         <h2 className="arham-section-title underline-animate">Our Core Values</h2>
         <div className="arham-values-grid">
           <div className="arham-value-card value-animate value-delay-1">

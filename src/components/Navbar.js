@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/" onClick={closeMenu}>Tisya</Link>
+        <Link to="/" onClick={closeMenu}>Arham Consultancy</Link>
       </div>
       <div className={`navbar-toggle${open ? ' open' : ''}`} onClick={handleToggle}>
         <span className="bar"></span>
