@@ -18,13 +18,31 @@ const Footer = () => (
           <span className="footer-contact-label">Address:</span> {address}
         </div>
       </div>
-      <nav className="footer-nav">
-        <Link to="/" className="footer-link">Home</Link>
-        <Link to="/about" className="footer-link">About</Link>
-        <Link to="/services" className="footer-link">Services</Link>
-        <Link to="/contact" className="footer-link">Contact</Link>
-      </nav>
+      
+      <div className="footer-section">
+        <h3 className="footer-section-title">Quick Links</h3>
+        <nav className="footer-nav">
+          <Link to="/" className="footer-link">Home</Link>
+          <Link to="/about" className="footer-link">About</Link>
+          <Link to="/services" className="footer-link">Services</Link>
+          <Link to="/contact" className="footer-link">Contact</Link>
+        </nav>
+      </div>
+
+      <div className="footer-section">
+        <h3 className="footer-section-title">Our Services</h3>
+        <nav className="footer-nav">
+          {/* <Link to="/services" className="footer-link">Income Tax Filing</Link> */}
+          <Link to="/services" className="footer-link">GST Registration</Link>
+          <Link to="/services" className="footer-link">Business Loans</Link>
+          <Link to="/services" className="footer-link">Company Registration</Link>
+          <Link to="/services" className="footer-link">Financial Planning</Link>
+          <Link to="/services" className="footer-link">Tax Consultation</Link>
+        </nav>
+      </div>
+      
       <div className="footer-social-contact">
+        <h3 className="footer-section-title">Contact Us</h3>
         <div className="footer-contact-simple">
           <div className="footer-contact-item">
             <span className="footer-contact-label"><FaEnvelope className="footer-contact-icon" /> :</span> <a href={`mailto:${email}`}>{email}</a>
